@@ -1,0 +1,123 @@
+*{
+  margin:0;
+  padding: 0;
+}
+
+body{
+   font-size: 15px;
+   font-family: 'Poppins', sans-serif;
+   color: hsl(229, 6%, 66%);
+   background-color: hsl(0, 0%, 98%)
+}
+
+.container{
+  margin: 0 auto;
+  padding: 50px 30px;
+  max-width: 1200px;
+}
+
+header{
+  text-align: center;
+}
+
+h2{
+  font-size: 34px;
+  font-weight: 200;
+  color: hsl(234, 12%, 34%);
+}
+
+h3{
+  font-size: 34px;
+  font-weight: 600;
+  color: hsl(234, 12%, 34%);
+}
+
+header p{
+  margin: 0 auto;
+  max-width: 500px;
+  margin-top: 20px;
+  font-size: 14px;
+
+}
+
+.main{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap:25px;
+  margin-top: 60px;
+}
+
+.box{
+  background-color: #fff;
+  text-align: right;
+  padding: 30px;
+  border-radius: 7px;
+  box-shadow: 2px 2px 5px lightgrey;
+
+
+}
+
+.box-text{
+  text-align:left;
+}
+
+.box1{
+ border-top: 5px solid hsl(180, 62%, 55%);
+
+}
+
+.box2{
+ border-top: 5px solid hsl(0, 78%, 62%)
+}
+
+.box3{
+ border-top: 5px solid hsl(34, 97%, 64%)
+}
+
+.box4{
+ border-top: 5px solid hsl(212, 86%, 64%)
+}
+
+.box-text h5{
+ font-size: 20px;
+ color: hsl(234, 12%, 34%);
+ margin-bottom: 10px;
+}
+
+.box-container {
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.box1, .box4{
+  align-self: center;
+}
+
+@media only screen and (max-width: 500px) {
+  .main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (max-width: 375px) {
+  body {
+    font-size: 13px;
+  }
+
+  header h2 {
+    font-size: 22px;
+  }
+
+  header h3 {
+    font-size: 22px;
+  }
+
+  .box {
+    padding: 20px;
+  }
+
+  .box-text {
+    padding-bottom: 30px;
+  }
+}
